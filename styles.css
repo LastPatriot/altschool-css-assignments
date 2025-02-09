@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('971.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.15); /* Glass effect */
+    backdrop-filter: blur(10px); /* Reduced blur */
+    -webkit-backdrop-filter: blur(10px);
+    padding: 80px 60px 90px; /* Less top padding, more bottom padding */
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 70%;
+    max-width: 900px;
+    min-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Moves content to the top */
+    align-items: center;
+}
+
+
+h1 {
+    margin-bottom: 20px; 
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.assignment-text {
+    margin-bottom: 8px; 
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.assignments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px; 
+}
+
+.assignments a {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.assignments a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}

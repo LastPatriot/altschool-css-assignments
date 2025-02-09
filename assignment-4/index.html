@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .left-section h2 {
+        padding-bottom: 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="left-section">
+        <img src="./Logo.png" alt="Logo" />
+        <h2>For Individuals</h2>
+        <p class="desktop-view">
+          Start benefiting from the wellness experience. For companies looking
+          to increase productivity and improve organizational wellness.
+        </p>
+        <p class="mobile-view">
+          Inspiring wholesome harmony for the mind, body and spirit, for
+          everyone, everywhere.
+        </p>
+      </section>
+      <section class="form-container">
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="Tolu"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Enter Last Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+              <option value="" disabled selected>Select here</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input
+              type="text"
+              id="dob"
+              name="dob"
+              placeholder="Select here"
+              onfocus="(this.type='date')"
+              onblur="if(!this.value) this.type='text'"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="weight">Weight (KG)</label>
+            <input
+              type="number"
+              id="weight"
+              name="weight"
+              placeholder="Enter Weight"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="height">Height (CM)</label>
+            <input
+              type="number"
+              id="height"
+              name="height"
+              placeholder="Enter height here.."
+              required
+            />
+          </div>
+          <div class="form-group2">
+            <label for="activity">Activity Level</label>
+            <select id="activity" name="activity" required>
+              <option value="" placeholder="Select here" disabled selected>
+                Select here
+              </option>
+              <!-- Options to be populated -->
+            </select>
+          </div>
+          <div class="form-group2">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit" class="register-btn">Register</button>
+          <p class="terms">
+            By clicking Register, you agree to our
+            <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>
+          </p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
